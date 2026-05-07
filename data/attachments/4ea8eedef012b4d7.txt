@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-07T16:36:01.513450+00:00",
+  "summary": {
+    "total_assertions": 1,
+    "passed": 0,
+    "failed": 1
+  },
+  "results": [
+    {
+      "assertion": "no_dns_nxdomain",
+      "passed": false,
+      "failures": [
+        {
+          "type": "dns_nxdomain",
+          "query": "nonexistent.badhost.local",
+          "src_ip": "8.8.8.8",
+          "dst_ip": "192.168.1.10",
+          "wireshark_filter": "dns.qry.name==\"nonexistent.badhost.local\""
+        }
+      ]
+    }
+  ]
+}

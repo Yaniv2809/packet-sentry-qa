@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-07T16:36:01.566900+00:00",
+  "summary": {
+    "total_assertions": 1,
+    "passed": 0,
+    "failed": 1
+  },
+  "results": [
+    {
+      "assertion": "tcp_handshake_latency",
+      "passed": false,
+      "failures": [
+        {
+          "type": "tcp_slow_handshake",
+          "src_ip": "10.0.0.3",
+          "src_port": 2002,
+          "dst_ip": "10.0.0.2",
+          "dst_port": 443,
+          "latency_ms": 250.0,
+          "threshold_ms": 200,
+          "wireshark_filter": "(ip.src==10.0.0.3 && tcp.srcport==2002 && ip.dst==10.0.0.2 && tcp.dstport==443)"
+        }
+      ]
+    }
+  ]
+}

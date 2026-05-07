@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-07T16:36:01.537830+00:00",
+  "summary": {
+    "total_assertions": 1,
+    "passed": 0,
+    "failed": 1
+  },
+  "results": [
+    {
+      "assertion": "sip_calls_completed",
+      "passed": false,
+      "failures": [
+        {
+          "type": "sip_call_not_completed",
+          "call_id": "call-bbb222",
+          "src_ip": "10.1.0.3",
+          "dst_ip": "10.1.0.2",
+          "wireshark_filter": "sip.Call-ID==\"call-bbb222\""
+        }
+      ]
+    }
+  ]
+}
